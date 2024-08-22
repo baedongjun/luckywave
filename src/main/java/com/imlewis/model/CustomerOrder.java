@@ -28,7 +28,7 @@ public class CustomerOrder implements Serializable{
 
     private double orderTotalPrice;
     
-    @Column(columnDefinition="DATETIME")
+    @Column(columnDefinition="TIMESTAMP")
     private Date orderDate;
     
     @OneToOne

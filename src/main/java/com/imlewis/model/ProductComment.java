@@ -33,7 +33,7 @@ public class ProductComment implements Serializable {
     @JoinColumn(name = "customerId")
     private Customer customer;
 
-    @Column(columnDefinition="DATETIME")
+    @Column(columnDefinition="TIMESTAMP")
     private Date commentDate;
 
 	public Long getCommentId() {

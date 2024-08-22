@@ -45,10 +45,10 @@ public class Product implements Serializable, Comparable<Product>{
     @Column(columnDefinition = "TEXT")
     private String productDescription;
     
-    @Column(columnDefinition="DATETIME")
+    @Column(columnDefinition="TIMESTAMP")
     private Date productDate;
     
-    @Column(name = "productViews", nullable = false, columnDefinition = "bigint(20) default 0")
+    @Column(name = "productViews", nullable = false, columnDefinition = "bigint default 0")
     private long productViews = 0;
 
     @Min(value = 0, message = "Product price must no be less then zero.")

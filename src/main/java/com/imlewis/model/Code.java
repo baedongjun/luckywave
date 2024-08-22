@@ -19,7 +19,7 @@ public class Code {
 	private String codeStr;
 	private int codeType; // 0:active, 1: reset PW
 	
-	@Column(columnDefinition="DATETIME")
+	@Column(columnDefinition="TIMESTAMP")
 	private Date codeDate;
 	
 	@ManyToOne
