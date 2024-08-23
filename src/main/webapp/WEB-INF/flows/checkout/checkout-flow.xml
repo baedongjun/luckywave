@@ -3,11 +3,11 @@
       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
       xsi:schemaLocation="http://www.springframework.org/schema/webflow http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
 
-    <var name="order" class="com.imlewis.model.CustomerOrder" />
-    <var name="cart" class="com.imlewis.model.Cart" />
-    <var name="shippingAddress" class="com.imlewis.model.ShippingAddress" />
-    <var name="shippingAddresses" class="com.imlewis.model.ShippingAddress" />
-    <var name="customerOrderShippingAddress" class="com.imlewis.model.CustomerOrderShippingAddress" />
+    <var name="order" class="kr.co.luckywave.model.CustomerOrder" />
+    <var name="cart" class="kr.co.luckywave.model.Cart" />
+    <var name="shippingAddress" class="kr.co.luckywave.model.ShippingAddress" />
+    <var name="shippingAddresses" class="kr.co.luckywave.model.ShippingAddress" />
+    <var name="customerOrderShippingAddress" class="kr.co.luckywave.model.CustomerOrderShippingAddress" />
 
     <action-state id="addCartToOrder">
         <evaluate expression="cartServiceImpl.validate(externalContext.globalSessionMap.cartId_)" result="cart" />
